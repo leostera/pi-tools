@@ -1,0 +1,21 @@
+{
+  "name": "pi-tui",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@xterm/addon-serialize": "^0.14.0",
+    "@xterm/headless": "^6.0.0",
+    "node-pty": "^1.1.0",
+    "shell-quote": "^1.8.3",
+    "typebox": "^1.1.38"
+  },
+  "devDependencies": {
+    "@types/shell-quote": "^1.7.5"
+  },
+  "description": "A pi.dev extension for letting Pi drive terminal/TUI applications via a managed PTY and web overlay.",
+  "pi": {
+    "extensions": [
+      "./index.ts"
+    ]
+  }
+}
