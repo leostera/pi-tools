@@ -5,6 +5,7 @@
   "dependencies": {
     "@xterm/addon-serialize": "^0.14.0",
     "@xterm/headless": "^6.0.0",
+    "effect": "^3.21.2",
     "node-pty": "^1.1.0",
     "shell-quote": "^1.8.3",
     "typebox": "^1.1.38"

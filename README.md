@@ -7,13 +7,14 @@ A pi.dev extension that lets Pi drive terminal/TUI applications continuously.
 ## Install dependencies
 
 ```sh
+cd pi-tui
 npm install
 npm rebuild node-pty --build-from-source
 ```
 
 ## Use in this repo
 
-This repo includes a project-local shim at `.pi/extensions/pi-tui/index.ts`, so Pi auto-loads the extension from the repo root.
+The extension lives in `pi-tui/`. This repo includes a project-local shim at `.pi/extensions/pi-tui/index.ts`, so Pi auto-loads the extension from the repo root.
 
 ```sh
 pi
@@ -22,19 +23,19 @@ pi
 Then run a TUI app:
 
 ```txt
-/tui run nethack
+/tui-run nethack
 ```
 
 Or with explicit terminal size:
 
 ```txt
-/tui run --cols 140 --rows 40 nethack
+/tui-run --cols 140 --rows 40 nethack
 ```
 
 Run a remote TUI over SSH:
 
 ```txt
-/tui run --cols 140 --rows 40 ssh -tt starbase2 dwarffortress
+/tui-run --cols 140 --rows 40 ssh -tt starbase2 dwarffortress
 ```
 
 Open the overlay:
@@ -46,7 +47,15 @@ http://127.0.0.1:7777
 ## Commands
 
 ```txt
-/tui run [--port 7777] [--cols 140] [--rows 40] <command>
+/tui-run [--port 7777] [--cols 140] [--rows 40] <command>
+/tui-status
+/tui-stop
+```
+
+Legacy grouped commands also work:
+
+```txt
+/tui run <command>
 /tui status
 /tui stop
 ```
