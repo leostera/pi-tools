@@ -18,5 +18,9 @@
     "extensions": [
       "./index.ts"
     ]
+  },
+  "scripts": {
+    "build": "npm rebuild node-pty --build-from-source && node -e \"import('./index.ts').then(()=>console.log('pi-tui build ok'))\"",
+    "check": "node -e \"import('./index.ts').then(()=>console.log('pi-tui import ok'))\""
   }
 }

@@ -277,7 +277,7 @@ async function runTuiCommand(args: string, ctx: any) {
     session = null;
     runningLoop = false;
     const message = error instanceof Error ? error.message : String(error);
-    ctx.ui.notify(`Failed to start TUI app: ${message}. If this says posix_spawnp failed, run from the repo root: npm rebuild node-pty --build-from-source`, "error");
+    ctx.ui.notify(`Failed to start TUI app: ${message}. If this says posix_spawnp failed, run from the repo root: npm run build`, "error");
     return;
   }
   serverUrl = `http://127.0.0.1:${port}`;

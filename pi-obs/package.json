@@ -1,0 +1,18 @@
+{
+  "name": "pi-obs",
+  "private": true,
+  "type": "module",
+  "description": "A pi.dev extension for controlling OBS Studio via obs-websocket.",
+  "dependencies": {
+    "effect": "^3.21.2",
+    "obs-websocket-js": "^5.0.8",
+    "typebox": "^1.1.38"
+  },
+  "scripts": {
+    "build": "node -e \"import('./index.ts').then(()=>console.log('pi-obs build ok'))\"",
+    "check": "node -e \"import('./index.ts').then(()=>console.log('pi-obs import ok'))\""
+  },
+  "pi": {
+    "extensions": ["./index.ts"]
+  }
+}

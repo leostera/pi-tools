@@ -1,0 +1,13 @@
+{
+  "name": "pi-tools",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "pi-tui",
+    "pi-obs"
+  ],
+  "scripts": {
+    "build": "npm --workspaces run build",
+    "check": "npm --workspaces run check"
+  }
+}
