@@ -78,6 +78,30 @@ Tools registered for agents:
 
 The project-local shim at `.pi/extensions/pi-obs/index.ts` loads `pi-obs/index.ts`.
 
+### `pi-gui`
+
+A pi.dev extension for observing GUI applications via screenshots/screen sampling.
+
+Current backend: macOS `screencapture` + `osascript`. You may need to grant Screen Recording permission to your terminal/Pi app in macOS Privacy & Security settings.
+
+Commands inside Pi:
+
+```txt
+/gui-screenshot [App Name]
+/gui-apps
+```
+
+Tools registered for agents:
+
+- `gui_screenshot`
+- `gui_foreground_app`
+- `gui_list_apps`
+- `gui_capture_series`
+
+Captures are written to `gui-captures/` and ignored by git.
+
+The project-local shim at `.pi/extensions/pi-gui/index.ts` loads `pi-gui/index.ts`.
+
 ## Workspace commands
 
 ```sh

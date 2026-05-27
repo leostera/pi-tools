@@ -4,3 +4,4 @@ node_modules/
 turns/
 context.md
 *.log
+gui-captures/

@@ -4,7 +4,8 @@
   "type": "module",
   "workspaces": [
     "pi-tui",
-    "pi-obs"
+    "pi-obs",
+    "pi-gui"
   ],
   "scripts": {
     "build": "npm --workspaces run build",

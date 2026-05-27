@@ -1,0 +1,17 @@
+{
+  "name": "pi-gui",
+  "private": true,
+  "type": "module",
+  "description": "A pi.dev extension for observing the desktop or foreground GUI application via screenshots.",
+  "dependencies": {
+    "effect": "^3.21.2",
+    "typebox": "^1.1.38"
+  },
+  "scripts": {
+    "build": "node -e \"import('./index.ts').then(()=>console.log('pi-gui build ok'))\"",
+    "check": "node -e \"import('./index.ts').then(()=>console.log('pi-gui import ok'))\""
+  },
+  "pi": {
+    "extensions": ["./index.ts"]
+  }
+}
